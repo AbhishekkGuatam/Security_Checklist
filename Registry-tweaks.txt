@@ -1,0 +1,284 @@
+Using Classic Search In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Double click Use Search Asst and insert input text Yes in Value Data.
+Search Function With Using Address Bar In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchUrl
+Choose menu Edit > New > Key and give name accordance with desired search engine. Ex: Google, Yahoo etc.
+Open those new subkey and insert input in (Default) in search engine address form chosen with adding additional %s in the back. ex:
+Google = [Only Registered and Activated Users Can See Links. Click Here To Register...]
+Yahoo = [Only Registered and Activated Users Can See Links. Click Here To Register...]
+Note: Only for Internet Explorer 6
+
+Change Search Assistant In Internet Explorer
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Search
+Make a new String Value if it's not existed yet, and give name SearchAssistant.
+Double click SearchAssistant and insert url address from chosen search engine in Value Data.
+Ex: [Only Registered and Activated Users Can See Links. Click Here To Register...]
+
+Change Default Search Page In Internet Explorer
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main
+Make a new String Value if it's not existed yet, and give name Search Bar.
+Double click Search Bar and insert url address from chosen search engine in Value Data.
+Ex: [Only Registered and Activated Users Can See Links. Click Here To Register...]
+
+Deactivated Download File Function In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings\Zones\3
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Curr entVersion\Internet Settings\Zones\3
+Make a new DWORD Value if it's not existed yet, and give name 1803.
+Double click 1803 and insert value 3 in Value Data.
+
+Restriction Installation Program Through ActiveX In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings\Zones\3
+Make a new DWORD Value if it's not existed yet, and give name 1001.
+Double click 1001 and insert desired input as the following in Value Data:
+1 = Installations Prompt Enabled
+3 = Installations Disabled
+
+Deactivated Local Stylesheets Function In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Styles
+Double click Use My Stylesheet and insert value 0 in Value Data.
+
+Restriction For Import And Export Cookies Function And Favorites In Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer
+Make a new DWORD Value and give name DisableImportExportFavorites.
+Double click DisableImportExportFavorites and insert value 1 in Value Data.
+
+Activated Password Caching Function In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings
+Make a new DWORD Value and give name DisablePasswordCaching.
+Double click DisablePasswordCaching and insert value 1 in Value Data.
+
+Restriction On Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer\Restrictions
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Int ernet Explorer\Restrictions
+Make a new or few desired DWORD Value with their own name as the following:
+AlwaysPromptWhenDownload - Always prompt user when downloading files.
+NoBrowserBars - Disable changes to browsers bars.
+NoBrowserClose - Disable the option of closing Internet Explorer.
+NoBrowserContextMenu - Disable right-click context menu.
+NoBrowserOptions - Disable the Tools > Internet Options menu.
+NoBrowserSaveAs - Disable the ability to Save As.
+NoFavorites - Disable the Favorites.
+NoFileNew - Disable the File > New command.
+NoFileOpen - Disable the File > Open command.
+NoFindFiles - Disable the Find Files command.
+NoNavButtons - Disables the Forward and Back navigation buttons
+NoOpeninNewWnd - Disable Open in New Window option.
+NoPrinting - Remove Print and Print Preview from the File menu.
+NoSelectDownloadDir - Disable the option of selecting a download directory.
+NoTheaterMode - Disable the Full Screen view option.
+NoViewSource - Disable the ability to view the page source HTML.
+RestGoMenu - Remove Mail and News menu item.
+Double click at each value and insert value 1 in Value Data.
+
+Deactivated Caching Function On Secure Web Pages
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings
+Make a new DWORD Value if it's not existed yet, and give name DisableCachingOfSSLPages.
+Double click DisableCachingOfSSLPages and insert value 1 in Value Data.
+
+Activated Content Advisor
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\Policies\Ratings\.Default
+Make a few DWORD Value with each name as the following:
+Enabled - (1 = enable content advisor, 0 = disable)
+Allow_Unknowns - (1 = display unrated sites, 0 = restrict unrated sites)
+PleaseMom - (1 = allow supervisor password, 0 = no supervisor override)
+Double click at each value and insert desired input in Value Data.
+
+Removing Content Advisor And Ratings Password Function
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curre ntVersion\Policies\Ratings
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\Policies\Ratings
+Delete subkey below ratings key.
+
+Deactivated Help Menu In Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer\Restrictions
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Int ernet Explorer\Restrictions
+Make a new or few desired DWORD Value with their own name as the following:
+NoHelpMenu - Disable the entire help menu
+NoHelpItemNetscapeHelp - Remove the "For Netscape Users" menu item
+NoHelpItemSendFeedback - Remove the "Send Feedback" menu item
+NoHelpItemTipOfTheDay - Remove the "Tip of the Day" menu item
+NoHelpItemTutorial - Remove the "Tour" (Tutorial) menu item
+Double click at each value and insert value 1 in Value Data.
+
+Deactivated Access To URL File In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Policies\Explorer
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Curr entVersion\Policies\Explorer
+Make a new DWORD Value and give name NoFileUrl.
+Double click NoFileUrl and insert value 1 in Value Data.
+
+Deactivated Control Panel Function In Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer\Control Panel
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Int ernet Explorer\Control Panel
+Make a few desired DWORD Value with their own name as the following:
+Advanced - Prevent changes to advanced settings
+Autoconfig - Prevent changes to Automatic Configuration
+Cache - Prevent changes to temporary file settings
+CalendarContact - Prevent changes to calender and contacts
+Certificates - Prevent changes to security certificates
+Check_If_Default - Prevent changes to default browser check
+Colors - Prevent Color changes
+Connection Settings - Prevent changes to connection settings
+Connection Wizard - Disable the Connection Wizard
+Fonts - Disable font changes
+History - Disable changes to History settings
+HomePage - Disable changes to Home Page settings
+Languages - Disable Language changes
+Links - Disable Links changes
+Messaging - Disable Messaging changes
+Profiles - Disable changes to Profiles
+Proxy - Disable changes to Proxy settings
+Ratings - Disable Ratings changes
+Wallet - Disable changes to Wallet settings
+Accessibility - disables all options under Accessibility
+GeneralTab - removes General tab
+SecurityTab - removes Security tab
+ContentTab - removes Content tab
+ConnectionsTab - removes Connections tab
+ProgramsTab - removes Programs tab
+PrivacyTab - removes Privacy tab
+AdvancedTab - removes Advanced tab
+CertifPers - prevents changing Personal Certificate options
+CertifSite - prevents changing Site Certificate options
+CertifPub - prevents changing Publisher Certificate options
+SecChangeSettings - prevents changing Security Levels for the Internet Zone
+SecAddSites - prevents adding Sites to any zone
+Privacy Settings - prevents changs to privacy settings
+FormSuggest - disables AutoComplete for forms
+For mSuggest Passwords - prevents Prompt me to save password from being displayed
+Connwiz Ad min Lock - disables the Internet Connection Wizard
+Settings - prevents any changes to Temporary Internet Files
+ResetWebSettings - disables the Reset web Setting button
+Double click at each value and insert value 1 in Value Data.
+Deactivated Function Installation Program From Website
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\Internet Settings\ZoneMap\Domains
+Make a new key right below Domains and give name accordance with chosen site name. ex
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\InternetSettings\ZoneMap\Domains\forbid den.com
+Below those subkey, make a new DWORD Value and give name * and insert value 4 in Value Data.
+
+Continue Reading...
+
+3 comments Links to this post  
+
+Labels: Registry Tweaks
+
+Registry Tweaks: Part 12
+
+Show Cascade Function In Folder Printer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Explorer\Advanced
+Make a new String Value and give name CascadePrinters.
+Double click CascadePrinters and insert text Yes input in Value Data.
+
+Optimalization Second Level Cache More Bigger
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Contro l\Session Manager\Memory Management
+Double click SecondLevelDataCache and insert input in kilobytes size form in (decimal) at Value Data.
+Note: Only for old processor.
+
+See Processor Information
+HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\Cen tralProcessor\0
+Note: Only for see not for edited.
+
+Change Windows Update Text In Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer
+Make a new String Value and give name Windows Update Menu Text.
+Double click Windows Update Menu Text ad insert desired input text in Value Data.
+
+Deleting Shortcut To Label On Internet Explorer Links
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer
+Double click Show_FullURL and insert value 0 in Value Data.
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Double click Show_FullURL and insert input text yes at Value Data.
+
+Lock Toolbar Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar
+Make a new DWORD Value and give name Locked.
+Double click Locked and insert value 1 in Value Data.
+
+Using Personalized Favorites Menu Function
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Make a new String Value if it's not existed yet, and give name FavIntelliMenus.
+Double click FavIntelliMenus and insert input text Yes at Value Data.
+Note: Jf this function activated, url list that rarely used will be hidden at Favorites menu.
+
+Removing Few Toolbar Internet Explorer Button
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Policies\Explorer
+Make a new DWORD Value and give name SpecifyDefaultButtons.
+Double click SpecifyDefaultButtons and insert value 1 in Value Data.
+Then make a few DWORD Value to every button that you want to vanished with the following name:
+Btn_Back
+Btn_Forward
+Btn_Stop
+Btn_Refresh
+Btn_Home
+Btn_Search
+Btn_Folders
+Btn_Favorites
+Btn_Media
+Btn_History
+Btn_Fullscreen
+Btn_Tools
+Btn_MailNews
+Btn_Size
+Btn_Print
+Btn_Edit
+Btn_Discussions
+Btn_Cut
+Btn_Copy
+Btn_Paste
+Btn_Encoding
+Btn_PrintPreview
+Double click each value and insert value 2 in Value Data.
+
+Show Friendly HTTP Error Messages Function
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Double click Friendly http errors and insert input text Yes in Value Data.
+
+Deactivated Expanding Internet Explorer New Menu Function
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Policies\Explorer
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Curr entVersion\Policies\Explorer
+Make a new DWORD Value and give name NoExpandedNewMenu.
+Double click NoExpandedNewMenu and insert value 1 in Value Data.
+
+Automatic Change File Picture Size In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Make a new String Value if it's not existed yet and give name Enable AutoImageResize.
+Double click Enable AutoImageResize and insert input text Yes in Value Data.
+
+Deactivated Internet Access
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings
+Make a few DWORD Value if it's not existed yet, and give each name ProxyEnable and ProxyServer.
+Double click ProxyEnable and insert value 1 in Value Data.
+Double click ProxyServer and insert input in fake proxy address form, ex: 127.0.0.1:1271
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Inte rnet Explorer\Control Panel
+Make new 2 DWORD Value and give each name Connection Settings and Connwiz Admin Lock.
+Double click each value and insert value 1 in Value Data.
+
+Change Default Keep-Alive Time-Out On Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings
+Make a new DWORD Value and give name KeepAliveTimeout.
+Double click KeepAliveTimeout and insert desired input in milisecond (default 120,000) at Value Data.
+
+Change Amount of HTTP Simultaneous
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre ntVersion\Internet Settings
+Make 2 new DWORD Value if it's not existed yet, and give name MaxConnectionsPerServer and MaxConnectionsPer1_0Server.
+Double click MaxConnectionsPerServer and insert desired input (default 2) in Value Data.
+Double click MaxConnectionsPer1_0Server and insert desired input (default 4) in Value Data
+
+Connection To Unicode Site (Foreign Language) With Internet Explorer
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Wind ows\CurrentVersion\Internet Settings
+Make a new DWORD Value and give name MBCSServername.
+Double click MBCSServername and insert value 0 in Value Data.
+
+Configuration System-Wide Proxy Function
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Win dows\CurrentVersion\Internet Settings
+Make a new DWORD Value and give name ProxySettingsPerUser.
+Double click ProxySettingsPerUser and insert desired input as the following in Value Data:
+0 = Whole Machine
+1 = Per User
+
+FTP Mode In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Ftp
+Double click Use Web Based FTP and insert input text Yes in Value Data.
+
+Deactivated Custom Search Page Function In Internet Explorer
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main
+Double click Use Custom Search URL and insert value 0 in Value Data.
